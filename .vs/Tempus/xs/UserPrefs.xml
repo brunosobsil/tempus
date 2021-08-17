@@ -1,13 +1,9 @@
-﻿<Properties StartupConfiguration="{194FFE9A-6AC1-41BD-ACD1-58B569C216D3}|Default">
+﻿<Properties GitUserInfo="UsingGIT" StartupConfiguration="{194FFE9A-6AC1-41BD-ACD1-58B569C216D3}|Default">
   <MonoDevelop.Ide.Workbench>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
-          <Node name="Tempus" expanded="True">
-            <Node name="Tempus.Data" expanded="True">
-              <Node name="Model" expanded="True" />
-            </Node>
-          </Node>
+          <Node name="Tempus" expanded="True" selected="True" />
         </State>
       </Pad>
     </Pads>

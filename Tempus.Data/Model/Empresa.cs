@@ -3,6 +3,7 @@ namespace Tempus.Data.Model
 {
     public class Empresa
     {
+        public int Id { get; set; }
         public string RazaoSocial { get; set; }
         public string CNPJ { get; set; }
         public string Responsavel { get; set; }
