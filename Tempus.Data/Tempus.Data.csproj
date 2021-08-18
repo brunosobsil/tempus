@@ -7,9 +7,15 @@
   <ItemGroup>
     <None Remove="Model\" />
     <None Remove="Repository\" />
+    <None Remove="NHibernate" />
+    <None Remove="FluentNHibernate" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Model\" />
     <Folder Include="Repository\" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="NHibernate" Version="5.3.9" />
+    <PackageReference Include="FluentNHibernate" Version="3.1.0" />
   </ItemGroup>
 </Project>
