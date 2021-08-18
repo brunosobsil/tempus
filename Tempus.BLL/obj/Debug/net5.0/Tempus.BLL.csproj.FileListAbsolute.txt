@@ -1,0 +1,15 @@
+/Users/brunosobral/projects/dotnet/Tempus/Tempus.BLL/bin/Debug/net5.0/Tempus.BLL.deps.json
+/Users/brunosobral/projects/dotnet/Tempus/Tempus.BLL/bin/Debug/net5.0/Tempus.BLL.dll
+/Users/brunosobral/projects/dotnet/Tempus/Tempus.BLL/bin/Debug/net5.0/ref/Tempus.BLL.dll
+/Users/brunosobral/projects/dotnet/Tempus/Tempus.BLL/bin/Debug/net5.0/Tempus.BLL.pdb
+/Users/brunosobral/projects/dotnet/Tempus/Tempus.BLL/obj/Debug/net5.0/Tempus.BLL.csproj.AssemblyReference.cache
+/Users/brunosobral/projects/dotnet/Tempus/Tempus.BLL/obj/Debug/net5.0/Tempus.BLL.GeneratedMSBuildEditorConfig.editorconfig
+/Users/brunosobral/projects/dotnet/Tempus/Tempus.BLL/obj/Debug/net5.0/Tempus.BLL.AssemblyInfoInputs.cache
+/Users/brunosobral/projects/dotnet/Tempus/Tempus.BLL/obj/Debug/net5.0/Tempus.BLL.AssemblyInfo.cs
+/Users/brunosobral/projects/dotnet/Tempus/Tempus.BLL/obj/Debug/net5.0/Tempus.BLL.csproj.CoreCompileInputs.cache
+/Users/brunosobral/projects/dotnet/Tempus/Tempus.BLL/obj/Debug/net5.0/Tempus.BLL.dll
+/Users/brunosobral/projects/dotnet/Tempus/Tempus.BLL/obj/Debug/net5.0/ref/Tempus.BLL.dll
+/Users/brunosobral/projects/dotnet/Tempus/Tempus.BLL/obj/Debug/net5.0/Tempus.BLL.pdb
+/Users/brunosobral/projects/dotnet/Tempus/Tempus.BLL/bin/Debug/net5.0/Tempus.Data.dll
+/Users/brunosobral/projects/dotnet/Tempus/Tempus.BLL/bin/Debug/net5.0/Tempus.Data.pdb
+/Users/brunosobral/projects/dotnet/Tempus/Tempus.BLL/obj/Debug/net5.0/Tempus.BLL.csproj.CopyComplete
