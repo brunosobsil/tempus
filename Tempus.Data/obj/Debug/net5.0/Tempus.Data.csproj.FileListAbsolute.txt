@@ -10,3 +10,15 @@
 /Users/brunosobral/projects/dotnet/Tempus/Tempus.Data/obj/Debug/net5.0/Tempus.Data.dll
 /Users/brunosobral/projects/dotnet/Tempus/Tempus.Data/obj/Debug/net5.0/ref/Tempus.Data.dll
 /Users/brunosobral/projects/dotnet/Tempus/Tempus.Data/obj/Debug/net5.0/Tempus.Data.pdb
+D:\dados\projetos\tempus\brunosobsil\tempus\Tempus.Data\bin\Debug\net5.0\Tempus.Data.deps.json
+D:\dados\projetos\tempus\brunosobsil\tempus\Tempus.Data\bin\Debug\net5.0\Tempus.Data.dll
+D:\dados\projetos\tempus\brunosobsil\tempus\Tempus.Data\bin\Debug\net5.0\ref\Tempus.Data.dll
+D:\dados\projetos\tempus\brunosobsil\tempus\Tempus.Data\bin\Debug\net5.0\Tempus.Data.pdb
+D:\dados\projetos\tempus\brunosobsil\tempus\Tempus.Data\obj\Debug\net5.0\Tempus.Data.csproj.AssemblyReference.cache
+D:\dados\projetos\tempus\brunosobsil\tempus\Tempus.Data\obj\Debug\net5.0\Tempus.Data.GeneratedMSBuildEditorConfig.editorconfig
+D:\dados\projetos\tempus\brunosobsil\tempus\Tempus.Data\obj\Debug\net5.0\Tempus.Data.AssemblyInfoInputs.cache
+D:\dados\projetos\tempus\brunosobsil\tempus\Tempus.Data\obj\Debug\net5.0\Tempus.Data.AssemblyInfo.cs
+D:\dados\projetos\tempus\brunosobsil\tempus\Tempus.Data\obj\Debug\net5.0\Tempus.Data.csproj.CoreCompileInputs.cache
+D:\dados\projetos\tempus\brunosobsil\tempus\Tempus.Data\obj\Debug\net5.0\Tempus.Data.dll
+D:\dados\projetos\tempus\brunosobsil\tempus\Tempus.Data\obj\Debug\net5.0\ref\Tempus.Data.dll
+D:\dados\projetos\tempus\brunosobsil\tempus\Tempus.Data\obj\Debug\net5.0\Tempus.Data.pdb

@@ -11,5 +11,9 @@ namespace Tempus.Data.Model
             this.Codigo = codigo;
             this.Descricao = descricao;
         }
+
+        public Departamento()
+        {
+        }
     }
 }

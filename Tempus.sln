@@ -3,11 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30114.105
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tempus.Data", "Tempus.Data\Tempus.Data.csproj", "{9D586B49-1E8D-45AA-B26C-3F6C591B960D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Tempus.Data", "Tempus.Data\Tempus.Data.csproj", "{9D586B49-1E8D-45AA-B26C-3F6C591B960D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tempus.BLL", "Tempus.BLL\Tempus.BLL.csproj", "{4ECFC8D6-B7B1-4B3F-B05E-EE047F240929}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Tempus.BLL", "Tempus.BLL\Tempus.BLL.csproj", "{4ECFC8D6-B7B1-4B3F-B05E-EE047F240929}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tempus.API", "Tempus.API\Tempus.API.csproj", "{194FFE9A-6AC1-41BD-ACD1-58B569C216D3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Tempus.API", "Tempus.API\Tempus.API.csproj", "{194FFE9A-6AC1-41BD-ACD1-58B569C216D3}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -17,9 +17,6 @@ Global
 		Release|Any CPU = Release|Any CPU
 		Release|x64 = Release|x64
 		Release|x86 = Release|x86
-	EndGlobalSection
-	GlobalSection(SolutionProperties) = preSolution
-		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{9D586B49-1E8D-45AA-B26C-3F6C591B960D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
@@ -58,5 +55,11 @@ Global
 		{194FFE9A-6AC1-41BD-ACD1-58B569C216D3}.Release|x64.Build.0 = Release|Any CPU
 		{194FFE9A-6AC1-41BD-ACD1-58B569C216D3}.Release|x86.ActiveCfg = Release|Any CPU
 		{194FFE9A-6AC1-41BD-ACD1-58B569C216D3}.Release|x86.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {DAE11E1E-48EB-4316-A047-5FC8E765D5AE}
 	EndGlobalSection
 EndGlobal

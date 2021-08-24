@@ -27,5 +27,9 @@ namespace Tempus.Data.Model
             this.Entrada3 = entrada3;
             this.Saida3 = saida3;
         }
+
+        public Horario()
+        {
+        }
     }
 }
