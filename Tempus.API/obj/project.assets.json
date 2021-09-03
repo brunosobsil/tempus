@@ -609,6 +609,18 @@
           "lib/netcoreapp2.0/NHibernate.dll": {}
         }
       },
+      "Npgsql/5.0.7": {
+        "type": "package",
+        "dependencies": {
+          "System.Runtime.CompilerServices.Unsafe": "4.6.0"
+        },
+        "compile": {
+          "lib/net5.0/Npgsql.dll": {}
+        },
+        "runtime": {
+          "lib/net5.0/Npgsql.dll": {}
+        }
+      },
       "Remotion.Linq/2.2.0": {
         "type": "package",
         "dependencies": {
@@ -3177,6 +3189,26 @@
         "nhibernate-mapping.xsd",
         "nhibernate.5.3.9.nupkg.sha512",
         "nhibernate.nuspec"
+      ]
+    },
+    "Npgsql/5.0.7": {
+      "sha512": "EQWwxb2lN9w78YG4f6Fxhw5lFEx4LuaNGasXzw86kTOJxiPsUORSh/BTencNZJO4uVqGZx3EO9Z8JXTAvRjgeg==",
+      "type": "package",
+      "path": "npgsql/5.0.7",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net5.0/Npgsql.dll",
+        "lib/net5.0/Npgsql.xml",
+        "lib/netcoreapp3.1/Npgsql.dll",
+        "lib/netcoreapp3.1/Npgsql.xml",
+        "lib/netstandard2.0/Npgsql.dll",
+        "lib/netstandard2.0/Npgsql.xml",
+        "lib/netstandard2.1/Npgsql.dll",
+        "lib/netstandard2.1/Npgsql.xml",
+        "npgsql.5.0.7.nupkg.sha512",
+        "npgsql.nuspec",
+        "postgresql.png"
       ]
     },
     "Remotion.Linq/2.2.0": {
@@ -6973,52 +7005,45 @@
   },
   "projectFileDependencyGroups": {
     "net5.0": [
+      "FluentNHibernate >= 3.1.0",
       "Microsoft.VisualStudio.Web.CodeGeneration.Design >= 5.0.2",
+      "NHibernate >= 5.3.9",
+      "Npgsql >= 5.0.7",
       "Swashbuckle.AspNetCore >= 5.6.3",
       "Tempus.BLL >= 1.0.0",
       "Tempus.Data >= 1.0.0"
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Leandro\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {},
-    "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\": {}
+    "/Users/brunosobral/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\dados\\projetos\\tempus\\brunosobsil\\tempus\\Tempus.API\\Tempus.API.csproj",
+      "projectUniqueName": "/Users/brunosobral/projects/dotnet/Tempus/Tempus.API/Tempus.API.csproj",
       "projectName": "Tempus.API",
-      "projectPath": "D:\\dados\\projetos\\tempus\\brunosobsil\\tempus\\Tempus.API\\Tempus.API.csproj",
-      "packagesPath": "C:\\Users\\Leandro\\.nuget\\packages\\",
-      "outputPath": "D:\\dados\\projetos\\tempus\\brunosobsil\\tempus\\Tempus.API\\obj\\",
+      "projectPath": "/Users/brunosobral/projects/dotnet/Tempus/Tempus.API/Tempus.API.csproj",
+      "packagesPath": "/Users/brunosobral/.nuget/packages/",
+      "outputPath": "/Users/brunosobral/projects/dotnet/Tempus/Tempus.API/obj/",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
-        "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
-      ],
       "configFilePaths": [
-        "C:\\Users\\Leandro\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        "/Users/brunosobral/.config/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net5.0"
       ],
       "sources": {
-        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
-            "D:\\dados\\projetos\\tempus\\brunosobsil\\tempus\\Tempus.BLL\\Tempus.BLL.csproj": {
-              "projectPath": "D:\\dados\\projetos\\tempus\\brunosobsil\\tempus\\Tempus.BLL\\Tempus.BLL.csproj"
+            "/Users/brunosobral/projects/dotnet/Tempus/Tempus.BLL/Tempus.BLL.csproj": {
+              "projectPath": "/Users/brunosobral/projects/dotnet/Tempus/Tempus.BLL/Tempus.BLL.csproj"
             },
-            "D:\\dados\\projetos\\tempus\\brunosobsil\\tempus\\Tempus.Data\\Tempus.Data.csproj": {
-              "projectPath": "D:\\dados\\projetos\\tempus\\brunosobsil\\tempus\\Tempus.Data\\Tempus.Data.csproj"
+            "/Users/brunosobral/projects/dotnet/Tempus/Tempus.Data/Tempus.Data.csproj": {
+              "projectPath": "/Users/brunosobral/projects/dotnet/Tempus/Tempus.Data/Tempus.Data.csproj"
             }
           }
         }
@@ -7033,9 +7058,21 @@
       "net5.0": {
         "targetAlias": "net5.0",
         "dependencies": {
+          "FluentNHibernate": {
+            "target": "Package",
+            "version": "[3.1.0, )"
+          },
           "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
             "target": "Package",
             "version": "[5.0.2, )"
+          },
+          "NHibernate": {
+            "target": "Package",
+            "version": "[5.3.9, )"
+          },
+          "Npgsql": {
+            "target": "Package",
+            "version": "[5.0.7, )"
           },
           "Swashbuckle.AspNetCore": {
             "target": "Package",
@@ -7060,7 +7097,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.302\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/5.0.301/RuntimeIdentifierGraph.json"
       }
     }
   }

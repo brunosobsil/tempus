@@ -33,7 +33,10 @@
     ".NETCoreApp,Version=v5.0": {
       "Tempus.API/1.0.0": {
         "dependencies": {
+          "FluentNHibernate": "3.1.0",
           "Microsoft.VisualStudio.Web.CodeGeneration.Design": "5.0.2",
+          "NHibernate": "5.3.9",
+          "Npgsql": "5.0.7",
           "Swashbuckle.AspNetCore": "5.6.3",
           "Tempus.BLL": "1.0.0",
           "Tempus.Data": "1.0.0",
@@ -906,6 +909,20 @@
           "lib/netcoreapp2.0/NHibernate.dll": {}
         }
       },
+      "Npgsql/5.0.7": {
+        "dependencies": {
+          "System.Runtime.CompilerServices.Unsafe": "4.7.1"
+        },
+        "runtime": {
+          "lib/net5.0/Npgsql.dll": {
+            "assemblyVersion": "5.0.7.0",
+            "fileVersion": "5.0.7.0"
+          }
+        },
+        "compile": {
+          "lib/net5.0/Npgsql.dll": {}
+        }
+      },
       "Remotion.Linq/2.2.0": {
         "dependencies": {
           "System.Collections": "4.3.0",
@@ -1080,11 +1097,7 @@
           "System.Threading.Tasks": "4.3.0"
         }
       },
-      "System.Collections.Immutable/5.0.0": {
-        "compile": {
-          "lib/netstandard2.0/System.Collections.Immutable.dll": {}
-        }
-      },
+      "System.Collections.Immutable/5.0.0": {},
       "System.Composition/1.0.31": {
         "dependencies": {
           "System.Composition.AttributedModel": "1.0.31",
@@ -1485,11 +1498,7 @@
           "System.Runtime": "4.3.0"
         }
       },
-      "System.Reflection.Metadata/5.0.0": {
-        "compile": {
-          "lib/netstandard2.0/System.Reflection.Metadata.dll": {}
-        }
-      },
+      "System.Reflection.Metadata/5.0.0": {},
       "System.Reflection.Primitives/4.3.0": {
         "dependencies": {
           "Microsoft.NETCore.Platforms": "2.1.2",
@@ -3758,6 +3767,13 @@
       "sha512": "sha512-324uaJ8BH2yP6Dcd+v6zf/hL49EtBdI1aFxi933oW24Z6w7Nv4KqMtIE+//zfjF41hH45hP8xDvQ2f3lMV4BUw==",
       "path": "nhibernate/5.3.9",
       "hashPath": "nhibernate.5.3.9.nupkg.sha512"
+    },
+    "Npgsql/5.0.7": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-EQWwxb2lN9w78YG4f6Fxhw5lFEx4LuaNGasXzw86kTOJxiPsUORSh/BTencNZJO4uVqGZx3EO9Z8JXTAvRjgeg==",
+      "path": "npgsql/5.0.7",
+      "hashPath": "npgsql.5.0.7.nupkg.sha512"
     },
     "Remotion.Linq/2.2.0": {
       "type": "package",

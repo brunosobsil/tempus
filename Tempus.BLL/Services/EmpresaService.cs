@@ -1,22 +1,22 @@
 ﻿using System.Collections.Generic;
 using Tempus.Data.Model;
+using Tempus.Data.Repository;
 
 namespace Tempus.BLL.Services
 {
     public class EmpresaService : IEmpresaService
     {
+        IEmpresaRepository empresaRepository;
+
+        public EmpresaService(IEmpresaRepository empresaRepository)
+        {
+            this.empresaRepository = empresaRepository;
+        }
+
+
         public IEnumerable<Empresa> GetAll()
         {
-            var empresas = new List<Empresa>();
-            var e1 = new Empresa(1, "TechnoLogic", "10000000000100", "Leandro Nunes");
-            var e2 = new Empresa(2, "Tempus", "10000000000100", "Bruno Sobral");
-            var e3 = new Empresa(3, "BRL", "10000000000100", "Raphael Azen");
-
-            empresas.Add(e1);
-            empresas.Add(e2);
-            empresas.Add(e3);
-
-            return empresas;
+            return this.empresaRepository.GetAll();
         }
     }
 }

@@ -3,17 +3,17 @@ namespace Tempus.Data.Model
 {
     public class Funcionario
     {
-        public int Matricula { get; set; }
-        public string Nome { get; set; }
-        public string PIS { get; set; }
-        public string CTPS { get; set; }
-        public Empresa Empresa { get; set; }
-        public Horario Horario { get; set; }
-        public Funcao Funcao { get; set; }
-        public Departamento Departamento { get; set; }
-        public DateTime Admissao { get; set; }
-        public DateTime Demissao { get; set; }
-        public string MotivoDemissao { get; set; }
+        public virtual int Matricula { get; set; }
+        public virtual string Nome { get; set; }
+        public virtual string PIS { get; set; }
+        public virtual string CTPS { get; set; }
+        public virtual Empresa Empresa { get; set; }
+        public virtual Horario Horario { get; set; }
+        public virtual Funcao Funcao { get; set; }
+        public virtual Departamento Departamento { get; set; }
+        public virtual DateTime Admissao { get; set; }
+        public virtual DateTime Demissao { get; set; }
+        public virtual string MotivoDemissao { get; set; }
 
         public Funcionario(int matricula,
                            string nome,
@@ -40,5 +40,7 @@ namespace Tempus.Data.Model
             this.MotivoDemissao = motivoDemissao;
 
         }
+
+        public Funcionario() { }
     }
 }

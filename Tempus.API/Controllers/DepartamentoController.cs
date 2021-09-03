@@ -21,5 +21,30 @@ namespace Tempus.API.Controllers
         {
             return departamentoService.GetAll();
         }
+
+        [Route("codigo/{codigo}")]
+        [HttpGet]
+        public Departamento GetById(int codigo)
+        {
+            return this.departamentoService.GetById(codigo);
+        }
+
+        [HttpPost]
+        public Departamento Add([FromBody] Departamento departamento)
+        {
+            return this.departamentoService.Add(departamento);
+        }
+
+        [HttpPut]
+        public void Update([FromBody] Departamento departamento)
+        {
+            this.departamentoService.Update(departamento);   
+        }
+
+        [HttpDelete]
+        public void Delete([FromBody] Departamento departamento)
+        {
+            this.departamentoService.Delete(departamento);
+        }
     }
 }

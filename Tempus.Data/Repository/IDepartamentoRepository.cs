@@ -7,8 +7,8 @@ namespace Tempus.Data.Repository
     public interface IDepartamentoRepository
     {
         IEnumerable<Departamento> GetAll();
-        Departamento GetById(int id);
-        Departamento Include(Departamento departamento);
+        Departamento Get(Departamento departamento);
+        Departamento Add(Departamento departamento);
         void Update(Departamento departamento);
         void Delete(Departamento departamento);
 

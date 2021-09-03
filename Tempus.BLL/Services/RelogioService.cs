@@ -8,10 +8,11 @@ namespace Tempus.BLL.Services
         public IEnumerable<Relogio> GetAll()
         {
             var relogios = new List<Relogio>();
+            /*
             var r1 = new Relogio("1", "11.111.111.111", "Modelo1", new Empresa());
 
             relogios.Add(r1);
-
+            */
             return relogios;
         }
 

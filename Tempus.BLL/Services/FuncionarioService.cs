@@ -13,6 +13,7 @@ namespace Tempus.BLL.Services
         public IEnumerable<Funcionario> GetAll()
         {
             var funcionarios = new List<Funcionario>();
+            /*
             var empresa = new Empresa();
             var hora = new Horario();
             var funcao = new Funcao();
@@ -24,7 +25,7 @@ namespace Tempus.BLL.Services
             funcionarios.Add(f1);
             funcionarios.Add(f2);
             funcionarios.Add(f3);
-
+            */
             return funcionarios;
         }
     }

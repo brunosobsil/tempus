@@ -3,13 +3,13 @@ namespace Tempus.Data.Model
 {
     public class Horario
     {
-        public DiasDaSemana DiaDaSemana { get; set; }
-        public DateTime Entrada1 { get; set; }
-        public DateTime Saida1 { get; set; }
-        public DateTime Entrada2 { get; set; }
-        public DateTime Saida2 { get; set; }
-        public DateTime Entrada3 { get; set; }
-        public DateTime Saida3 { get; set; }
+        public virtual DiasDaSemana DiaDaSemana { get; set; }
+        public virtual DateTime Entrada1 { get; set; }
+        public virtual DateTime Saida1 { get; set; }
+        public virtual DateTime Entrada2 { get; set; }
+        public virtual DateTime Saida2 { get; set; }
+        public virtual DateTime Entrada3 { get; set; }
+        public virtual DateTime Saida3 { get; set; }
 
         public Horario(DiasDaSemana diaDaSemana,
                        DateTime entrada1,

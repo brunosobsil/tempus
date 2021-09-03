@@ -9,10 +9,12 @@
     <None Remove="Repository\" />
     <None Remove="NHibernate" />
     <None Remove="FluentNHibernate" />
+    <None Remove="Mappings\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Model\" />
     <Folder Include="Repository\" />
+    <Folder Include="Mappings\" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="NHibernate" Version="5.3.9" />

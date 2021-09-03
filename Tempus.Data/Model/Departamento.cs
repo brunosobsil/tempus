@@ -3,8 +3,8 @@ namespace Tempus.Data.Model
 {
     public class Departamento
     {
-        public int Codigo { get; set; }
-        public string Descricao { get; set; }
+        public virtual int Codigo { get; set; }
+        public virtual string Descricao { get; set; }
 
         public Departamento(int codigo, string descricao)
         {
