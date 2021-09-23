@@ -22,5 +22,29 @@ namespace Tempus.API.Controllers
             return funcaoService.GetAll();
         }
 
+        [Route("{codigo}")]
+        [HttpGet]
+        public Funcao Get(int codigo)
+        {
+            return this.funcaoService.Get(codigo);
+        }
+
+        [HttpPost]
+        public Funcao Add([FromBody] Funcao funcao)
+        {
+            return this.funcaoService.Add(funcao);
+        }
+
+        [HttpPut]
+        public void Update([FromBody] Funcao funcao)
+        {
+            this.funcaoService.Update(funcao);
+        }
+
+        [HttpDelete]
+        public void Delete([FromBody] Funcao funcao)
+        {
+            this.funcaoService.Delete(funcao);
+        }
     }
 }

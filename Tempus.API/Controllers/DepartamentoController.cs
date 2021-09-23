@@ -22,11 +22,11 @@ namespace Tempus.API.Controllers
             return departamentoService.GetAll();
         }
 
-        [Route("codigo/{codigo}")]
+        [Route("{codigo}")]
         [HttpGet]
-        public Departamento GetById(int codigo)
+        public Departamento Get(int codigo)
         {
-            return this.departamentoService.GetById(codigo);
+            return this.departamentoService.Get(codigo);
         }
 
         [HttpPost]

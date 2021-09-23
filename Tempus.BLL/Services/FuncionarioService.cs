@@ -1,32 +1,66 @@
 ﻿using System.Collections.Generic;
 using Tempus.Data.Model;
+using Tempus.Data.Repository;
 
 namespace Tempus.BLL.Services
 {
     public class FuncionarioService : IFuncionarioService
     {
-        public FuncionarioService()
-        {
+        IFuncionarioRepository funcionarioRepository;
 
+        public FuncionarioService(IFuncionarioRepository funcionarioRepository)
+        {
+            this.funcionarioRepository = funcionarioRepository;
         }
 
         public IEnumerable<Funcionario> GetAll()
         {
-            var funcionarios = new List<Funcionario>();
-            /*
-            var empresa = new Empresa();
-            var hora = new Horario();
-            var funcao = new Funcao();
-            var depart = new Departamento();
-            var f1 = new Funcionario(1, "Leandro Nunes e Silva", "123456", "123456", empresa, hora, funcao, depart, System.DateTime.Now, System.DateTime.Now, "Teste");
-            var f2 = new Funcionario(2, "Bruno Sobral Silva", "123456", "123456", empresa, hora, funcao, depart, System.DateTime.Now, System.DateTime.Now, "Teste");
-            var f3 = new Funcionario(3, "Fernando Cesar de Arantes Nicolau", "123456", "123456", empresa, hora, funcao, depart, System.DateTime.Now, System.DateTime.Now, "Teste");
+            return this.funcionarioRepository.GetAll();
+        }
 
-            funcionarios.Add(f1);
-            funcionarios.Add(f2);
-            funcionarios.Add(f3);
-            */
-            return funcionarios;
+        public IEnumerable<Funcionario> GetByEmpresa(Empresa empresa)
+        {
+            return this.funcionarioRepository.GetByEmpresa(empresa);
+        }
+
+        public IEnumerable<Funcionario> GetByEmpresaAtivos(Empresa empresa)
+        {
+            return this.funcionarioRepository.GetByEmpresaAtivos(empresa);
+        }
+
+        public IEnumerable<Funcionario> GetByEmpresaAndDepartamento(Empresa empresa, Departamento departamento)
+        {
+            return this.funcionarioRepository.GetByEmpresaAndDepartamento(empresa, departamento);
+        }
+
+        public IEnumerable<Funcionario> GetByEmpresaAndDepartamentoAtivos(Empresa empresa, Departamento departamento)
+        {
+            return this.funcionarioRepository.GetByEmpresaAndDepartamentoAtivos(empresa, departamento);
+        }
+
+        public Funcionario Get(Funcionario funcionario)
+        {
+            return this.funcionarioRepository.Get(funcionario); 
+        }
+
+        public Funcionario GetByPIS(Funcionario funcionario)
+        {
+            return this.funcionarioRepository.GetByPIS(funcionario);
+        }
+
+        public Funcionario Add(Funcionario funcionario)
+        {
+            return this.funcionarioRepository.Add(funcionario);
+        }
+
+        public void Update(Funcionario funcionario)
+        {
+            this.funcionarioRepository.Update(funcionario);
+        }
+
+        public void Delete(Funcionario funcionario)
+        {
+            this.funcionarioRepository.Delete(funcionario);
         }
     }
 }

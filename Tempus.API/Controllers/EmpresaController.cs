@@ -21,5 +21,43 @@ namespace Tempus.API.Controllers
         {
             return empresaService.GetAll();
         }
+
+        [Route("{id}")]
+        [HttpGet]
+        public Empresa Get(int id)
+        {
+            return this.empresaService.Get(id);
+        }
+
+        [Route("cnpj/{cnpj")]
+        [HttpGet]
+        public Empresa GetByCnpj(string cnpj)
+        {
+            return this.empresaService.GetByCNPJ(cnpj);
+        }
+
+        [HttpPost]
+        public Empresa Add([FromBody] Empresa empresa)
+        {
+            return this.empresaService.Add(empresa);
+        }
+
+        [HttpPut]
+        public void Update([FromBody] Empresa empresa)
+        {
+            this.empresaService.Update(empresa);
+        }
+
+        [HttpDelete]
+        public void Delete([FromBody] Empresa empresa)
+        {
+            this.empresaService.Delete(empresa);
+        }
+
+
+
+
+
+
     }
 }

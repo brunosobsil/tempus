@@ -21,5 +21,12 @@ namespace Tempus.API.Controllers
         {
             return funcionarioService.GetAll();
         }
+
+        //[Route("{matricula}")]
+        //[HttpGet]
+        //public Funcionario Get()
+        //{
+        //    return this.funcionarioService.Get()
+        //}
     }
 }

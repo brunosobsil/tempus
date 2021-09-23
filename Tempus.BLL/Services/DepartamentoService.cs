@@ -18,7 +18,7 @@ namespace Tempus.BLL.Services
             return this.departamentoRepository.GetAll();
         }
 
-        public Departamento GetById(int codigo)
+        public Departamento Get(int codigo)
         {
             Departamento departamento = new Departamento();
             departamento.Codigo = codigo;

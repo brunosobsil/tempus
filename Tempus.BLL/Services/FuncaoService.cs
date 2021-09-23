@@ -16,7 +16,28 @@ namespace Tempus.BLL.Services
         public IEnumerable<Funcao> GetAll()
         {
             return this.funcaoRepository.GetAll();
-            
+        }
+
+        public Funcao Get(int codigo)
+        {
+            Funcao funcao = new Funcao();
+            funcao.Codigo = codigo;
+            return this.funcaoRepository.Get(funcao);
+        }
+
+        public Funcao Add(Funcao funcao)
+        {
+            return this.funcaoRepository.Add(funcao);
+        }
+
+        public void Update(Funcao funcao)
+        {
+            this.funcaoRepository.Update(funcao);
+        }
+
+        public void Delete(Funcao funcao)
+        {
+            this.funcaoRepository.Delete(funcao);
         }
     }
 }

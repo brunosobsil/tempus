@@ -1,5 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using NHibernate;
 using Tempus.Data.Model;
 
@@ -7,7 +6,6 @@ namespace Tempus.Data.Repository
 {
     public class EmpresaRepository : IEmpresaRepository
     {
-
         ISession session;
 
         public EmpresaRepository(ISession session)
@@ -20,10 +18,10 @@ namespace Tempus.Data.Repository
             return this.session.CreateCriteria<Empresa>().List<Empresa>();
         }
 
-        public Empresa GetById(int id)
+        public Empresa Get(Empresa emp)
         {
             Empresa empresa = null;
-            IList<Empresa> result = this.session.QueryOver<Empresa>().Where(e => e.Id == id).List();
+            IList<Empresa> result = this.session.QueryOver<Empresa>().Where(e => e.Id == emp.Id).List();
             if (result.Count > 0)
             {
                 empresa = result[0];
@@ -32,10 +30,10 @@ namespace Tempus.Data.Repository
             return empresa;
         }
 
-        public Empresa GetByCNPJ(string CNPJ)
+        public Empresa GetByCNPJ(Empresa emp)
         {
             Empresa empresa = null;
-            IList<Empresa> result = this.session.QueryOver<Empresa>().Where(e => e.CNPJ == CNPJ).List();
+            IList<Empresa> result = this.session.QueryOver<Empresa>().Where(e => e.CNPJ == emp.CNPJ).List();
             if (result.Count > 0)
             {
                 empresa = result[0];
@@ -44,19 +42,22 @@ namespace Tempus.Data.Repository
             return empresa;
         }
 
-        public Empresa Include(Empresa empresa)
+        public Empresa Add(Empresa empresa)
         {
-            throw new NotImplementedException();
+            this.session.Save(empresa);
+            return empresa;
         }
 
         public void Update(Empresa empresa)
         {
-            throw new NotImplementedException();
+            this.session.Save(empresa);
+            this.session.Flush();
         }
 
         public void Delete(Empresa empresa)
         {
-            throw new NotImplementedException();
+            this.session.Save(empresa);
+            this.session.Flush();
         }
     }
 }

@@ -11,10 +11,9 @@ namespace Tempus.Data.Model
         public virtual Horario Horario { get; set; }
         public virtual Funcao Funcao { get; set; }
         public virtual Departamento Departamento { get; set; }
-        public virtual DateTime Admissao { get; set; }
-        public virtual DateTime Demissao { get; set; }
+        public virtual DateTime? Admissao { get; set; }
+        public virtual DateTime? Demissao { get; set; }
         public virtual string MotivoDemissao { get; set; }
-
         public Funcionario(int matricula,
                            string nome,
                            string pis,

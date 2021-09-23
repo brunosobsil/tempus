@@ -1,5 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using NHibernate;
 using Tempus.Data.Model;
 
@@ -19,10 +18,10 @@ namespace Tempus.Data.Repository
             return this.session.CreateCriteria<Funcao>().List<Funcao>();
         }
 
-        public Funcao GetById(int codigo)
+        public Funcao Get(Funcao func)
         {
             Funcao funcao = null;
-            IList<Funcao> result = this.session.QueryOver<Funcao>().Where(f => f.Codigo == codigo).List();
+            IList<Funcao> result = this.session.QueryOver<Funcao>().Where(f => f.Codigo == func.Codigo).List();
             if(result.Count > 0)
             {
                 funcao = result[0];
@@ -31,19 +30,22 @@ namespace Tempus.Data.Repository
             return funcao;
         }
 
-        public Funcao Include(Funcao funcao)
+        public Funcao Add(Funcao funcao)
         {
-            throw new NotImplementedException();
+            this.session.Save(funcao);
+            return funcao;
         }
 
         public void Update(Funcao funcao)
         {
-            throw new NotImplementedException();
+            this.session.Update(funcao);
+            this.session.Flush();
         }
 
         public void Delete(Funcao funcao)
         {
-            throw new NotImplementedException();
+            this.session.Delete(funcao);
+            this.session.Flush();
         }
     }
 }

@@ -7,10 +7,9 @@ namespace Tempus.Data.Repository
     public interface IFuncaoRepository
     {
         IEnumerable<Funcao> GetAll();
-        Funcao GetById(int id);
-        Funcao Include(Funcao funcao);
+        Funcao Get(Funcao funcao);
+        Funcao Add(Funcao funcao);
         void Update(Funcao funcao);
         void Delete(Funcao funcao);
-
     }
 }

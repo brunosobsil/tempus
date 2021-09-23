@@ -1,5 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using NHibernate;
 using Tempus.Data.Model;
 
@@ -8,7 +7,6 @@ namespace Tempus.Data.Repository
     public class DepartamentoRepository : IDepartamentoRepository
     {
         ISession session;
-
         public DepartamentoRepository(ISession session)
         {
             this.session = session;
@@ -48,7 +46,5 @@ namespace Tempus.Data.Repository
             this.session.Delete(departamento);
             this.session.Flush();
         }
-
-
     }
 }

@@ -1,5 +1,4 @@
-﻿using System;
-namespace Tempus.Data.Model
+﻿namespace Tempus.Data.Model
 {
     public class Relogio
     {
